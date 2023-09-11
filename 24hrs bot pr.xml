@@ -1,0 +1,1889 @@
+﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+  <variables>
+    <variable type="" id="ck^@burIyZ9u(1V$FidS">target profit</variable>
+    <variable type="" id="K1#(Yp``RbnrOixGup+3">stake</variable>
+    <variable type="" id="t6)FRH@rK@#PulS^T1b|">stake awal</variable>
+    <variable type="" id="r0bX?=9smAS_NhUkJMe;">Analisa 2</variable>
+    <variable type="" id="ln@GB@SG^m)pkh3SMT@V">NEXT DIGITS 2</variable>
+    <variable type="" id="(mdNFspLoz_D3b;?KB;j">Analisa</variable>
+    <variable type="" id="7xQg6.K{z7F*cua7CtFq">NEXT DIGITS</variable>
+  </variables>
+  <block type="trade" id="Yt52~)Nf#vNGlE+qP/vI" x="-168" y="72">
+    <field name="MARKET_LIST">volidx</field>
+    <field name="SUBMARKET_LIST">random_index</field>
+    <field name="SYMBOL_LIST">R_100</field>
+    <field name="TRADETYPECAT_LIST">digits</field>
+    <field name="TRADETYPE_LIST">matchesdiffers</field>
+    <field name="TYPE_LIST">DIGITDIFF</field>
+    <field name="CANDLEINTERVAL_LIST">60</field>
+    <field name="TIME_MACHINE_ENABLED">FALSE</field>
+    <field name="RESTARTONERROR">FALSE</field>
+    <statement name="INITIALIZATION">
+      <block type="variables_set" id="kU}OI/J~tALWAiFVupDw">
+        <field name="VAR" id="ck^@burIyZ9u(1V$FidS" variabletype="">target profit</field>
+        <value name="VALUE">
+          <block type="math_number" id="TD4ap@q|:aXepa/uw4?T">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="x3~Al68Jmd6um+*l[q%8">
+            <field name="VAR" id="K1#(Yp``RbnrOixGup+3" variabletype="">stake</field>
+            <value name="VALUE">
+              <block type="math_number" id="DCIJ/*N*Mn)OGMT`i8]Q">
+                <field name="NUM">0.35</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="o:Aqj2@)TU=ORQ8[pibn">
+                <field name="VAR" id="t6)FRH@rK@#PulS^T1b|" variabletype="">stake awal</field>
+                <value name="VALUE">
+                  <block type="math_number" id="iUPmlY~4vmrwM^kp0Yl-">
+                    <field name="NUM">0.35</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="[Goee2$u1`V2:UsCYNh;" collapsed="true">
+                    <field name="VAR" id="(mdNFspLoz_D3b;?KB;j" variabletype="">Analisa</field>
+                    <value name="VALUE">
+                      <block type="lists_create_with" id="w8,t#=s=]br/u6l!i=/b">
+                        <mutation items="149"></mutation>
+                        <value name="ADD0">
+                          <block type="math_number" id="e3Od!!|8X.+RqW,yzVf;">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="math_number" id="I~t0xK(g^6e{[jmk!_AP">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="math_number" id="%4,wwOiN*IvcFZq+Ur(4">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD3">
+                          <block type="math_number" id="d}+U{4Ql+}FRH(?e,L5K">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD4">
+                          <block type="math_number" id=")#x*TRuiB,5dM1+;szoJ">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD5">
+                          <block type="math_number" id="LPXpn^l`;Hrp;^G}cH}g">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD6">
+                          <block type="math_number" id="^N[S!sQarVV1L,;~7`%Q">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD7">
+                          <block type="math_number" id="B%_]7j_ZU4g`S;:@40^j">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD8">
+                          <block type="math_number" id="rhUC(n+:8+yZ0EH;c6t#">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD9">
+                          <block type="math_number" id="WnQU^bSN9~)VGU]5X,#e">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD10">
+                          <block type="math_number" id="kQB48+aX-i_s=E*FN1mO">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD11">
+                          <block type="math_number" id="X~*hfdjYpL2NI[3b2$hp">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD12">
+                          <block type="math_number" id="LO5h2bwg~w[KMK#A,|O2">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD13">
+                          <block type="math_number" id="gh|sDE)n*GzD7Y}7WE{z">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD14">
+                          <block type="math_number" id="Zk5UK#che!t52cUKXRqz">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD15">
+                          <block type="math_number" id="8]tH`80yXxNb-;T^3VdU">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD16">
+                          <block type="math_number" id="{~l4;z[;jUZ`@jJE28/v">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD17">
+                          <block type="math_number" id="ua4:g`/B7|?t)k!MdjHi">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD18">
+                          <block type="math_number" id="RRj_.@c`e.dY~l:Htk}e">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD19">
+                          <block type="math_number" id="8bvHx))oz/GkR)XWwnpD">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD20">
+                          <block type="math_number" id="c9m^w7FbDA:z-kcRN7}I">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD21">
+                          <block type="math_number" id="5vH`P(0TT9|3~o[jQXaP">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD22">
+                          <block type="math_number" id="D;_Huc)#X55UM}ip~O:Y">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD23">
+                          <block type="math_number" id="16VNb^G|d|YA@jeUK/J5">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD24">
+                          <block type="math_number" id=")skmi6LNh11bqN-yL@kt">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD25">
+                          <block type="math_number" id="ck(t%6vVW0b,]SjQ#je|">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD26">
+                          <block type="math_number" id="._X5LTL0#B4~PN]5(58-">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD27">
+                          <block type="math_number" id="qaj=JgW/qH=sJg1R}#|}">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD28">
+                          <block type="math_number" id="_fa)$OUS14;vm?Dk-t#k">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD29">
+                          <block type="math_number" id="spzdp`.4]C#7q~+rIi`a">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD30">
+                          <block type="math_number" id="A$.vq/mW=z?vU/DNYkiy">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD31">
+                          <block type="math_number" id="%Epc-OKW@t1-/7q;U|QX">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD32">
+                          <block type="math_number" id="][IHhj9mE8/+WdQ4B~VK">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD33">
+                          <block type="math_number" id="YoiXhPaMroz;jT%oj!}$">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD34">
+                          <block type="math_number" id="+5`)4T~]xX9y8#iE7-Y4">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD35">
+                          <block type="math_number" id="3St^VD`5FuQkA,fE{Ig6">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD36">
+                          <block type="math_number" id="4@?:~bw3y*IybZE3iW)T">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD37">
+                          <block type="math_number" id="$BxL[fw):_2EPQ)3p$?G">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD38">
+                          <block type="math_number" id="..`EgY_LMCRk}oz]75%+">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD39">
+                          <block type="math_number" id="=1CiN{Va,VSa3|8pnjcG">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD40">
+                          <block type="math_number" id="5TGYTTtoji2{0T~kN3Ol">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD41">
+                          <block type="math_number" id="pzi/4@n47j?jBsJJGspq">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD42">
+                          <block type="math_number" id="#]^!s|[=F/aL!9bDTJ)y">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD43">
+                          <block type="math_number" id="*}p*sEu66suR1+#BI:03">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD44">
+                          <block type="math_number" id="Ow*|6}93;5`p(2OJHxJ:">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD45">
+                          <block type="math_number" id="(X^HC;=_/vZ,ig(jH;%l">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD46">
+                          <block type="math_number" id="brL(}GbKhNtVe~s*ngTk">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD47">
+                          <block type="math_number" id="X,+N,B-8ZI*q4F*:l+fL">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD48">
+                          <block type="math_number" id="6U}A.HT:FbNYr?KZLLL^">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD49">
+                          <block type="math_number" id="%[ldD!MJi7B4OTx6$7Qo">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD50">
+                          <block type="math_number" id="nxP]A9FLfUQ_c{|KIfI~">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD51">
+                          <block type="math_number" id="R:ygnz^Oj3AoQ7Q.0Jn~">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD52">
+                          <block type="math_number" id="6[zuz*5fF22mR($lLY#z">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD53">
+                          <block type="math_number" id="Kl_yOsx_l@hlDJ8Slo#Z">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD54">
+                          <block type="math_number" id="^u6Yr`eNc!;@=Zs3wi_i">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD55">
+                          <block type="math_number" id="h718dA5v`dfOWM0?#2p`">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD56">
+                          <block type="math_number" id="EmEYt_FZCYW9s#H;W-Qd">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD57">
+                          <block type="math_number" id="`3WjDHw}Iir?+|;{zM[s">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD58">
+                          <block type="math_number" id="hQD@E!a(SL;IjMmf(j;|">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD59">
+                          <block type="math_number" id="Z|fvOd^5ueDZ#qR*`Ru-">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD60">
+                          <block type="math_number" id="%OWWk)9~0L^xRwll.WwN">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD61">
+                          <block type="math_number" id="Rd6#u],0:=SbQ+2zN$5p">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD62">
+                          <block type="math_number" id="m07^nX!X1Tv-:P$hytB7">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD63">
+                          <block type="math_number" id="L1;eFT|8/:L,/gi-8UV)">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD64">
+                          <block type="math_number" id="#M7vEbY:ag,a2}=?P3?2">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD65">
+                          <block type="math_number" id="mDRkIr,mtqQ}9~ihq`Mw">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD66">
+                          <block type="math_number" id="CdwMsD|Q.HAlho,kf|Z{">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD67">
+                          <block type="math_number" id="#n3~NSJLhx*eX/*;T?0o">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD68">
+                          <block type="math_number" id="m;nqbzcRzjq!.mw{#2gi">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD69">
+                          <block type="math_number" id="D,h,U~EU_sKpu2{SsQbv">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD70">
+                          <block type="math_number" id="vR:mwR8n2nrlj.U3e{o:">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD71">
+                          <block type="math_number" id="C@Mh!Y5*/b5KwjC6i@n/">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD72">
+                          <block type="math_number" id="dKgXF:MRT@p):iDeK=hj">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD73">
+                          <block type="math_number" id="kJ;cUU5k+RjLirdbp,~P">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD74">
+                          <block type="math_number" id="amRmtvIcda|vj^.EOTtQ">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD75">
+                          <block type="math_number" id="F@G9v4K|hubJa2b*?yn,">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD76">
+                          <block type="math_number" id="!`~e2x:kvEf2y^R)j?[V">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD77">
+                          <block type="math_number" id="#-uF_l`|DrS=d$n]}%v2">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD78">
+                          <block type="math_number" id="r*uq5N@@p!r/ATGOTXH7">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD79">
+                          <block type="math_number" id="X2yx}8DvuT57Fc3|YEa1">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD80">
+                          <block type="math_number" id="p7tN%i6H|z9EzV+Q:7n{">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD81">
+                          <block type="math_number" id="nx!*LQG~!49iB9-Ars6g">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD82">
+                          <block type="math_number" id="t6o!KCavTA(}o@`fbwew">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD83">
+                          <block type="math_number" id="Me)(?MoF_4}kJG8p9CEq">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD84">
+                          <block type="math_number" id="aj(`~R?bd2_MX(}@PrO4">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD85">
+                          <block type="math_number" id=";vfdlKSnlS0V6@}(:n|1">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD86">
+                          <block type="math_number" id="4.4HqVBgpl*;$RnopYhm">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD87">
+                          <block type="math_number" id="_56,vf`c64yH!UVm#d/N">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD88">
+                          <block type="math_number" id="!0tH6ek}X/[MHqMmEZ{.">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD89">
+                          <block type="math_number" id="/aathDTi;W@FbD56H.w=">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD90">
+                          <block type="math_number" id="~N@CAI6:aYEdpZY/a2+:">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD91">
+                          <block type="math_number" id="[OOz1!#M{tIQ9U0|n~a6">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD92">
+                          <block type="math_number" id="jjCtu+%vAwha00`GLX:{">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD93">
+                          <block type="math_number" id="aO??i]=~avf%oEhp^gg#">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD94">
+                          <block type="math_number" id="nwFetfD0{[-3L/xvhXR@">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD95">
+                          <block type="math_number" id="wzMdyZZx9NA]B4opXU`2">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD96">
+                          <block type="math_number" id="l?:ujN6BGpxXGcG0ey2U">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD97">
+                          <block type="math_number" id="6l~0[3~-M,`Q/6qN20w^">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD98">
+                          <block type="math_number" id="uDgtEyw?P1t.)d#lF38C">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD99">
+                          <block type="math_number" id="~$gg#u42f?BYA?+^xqJ/">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD100">
+                          <block type="math_number" id="BG]TW^X{]q2des9hp;=i">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD101">
+                          <block type="math_number" id="IfMorXi]q682+-.TN.Ri">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD102">
+                          <block type="math_number" id="6hm0@SALg5L}bDQZ^8o(">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD103">
+                          <block type="math_number" id="!NbYq}sm2eUZnY@Rp(rO">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD104">
+                          <block type="math_number" id="C2K@nEHHPE~VT03nE!G%">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD105">
+                          <block type="math_number" id="XR7m=].VHO?HJLB;oM(L">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD106">
+                          <block type="math_number" id="[_ZTSLvk?E756Of9h[Kj">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD107">
+                          <block type="math_number" id="oPVD^+Qj$hRj*}I}3k[T">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD108">
+                          <block type="math_number" id="%J7Zo6Xh[bFhH=9;DVnk">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD109">
+                          <block type="math_number" id="szC?|_H-5;~]F~|H)[_=">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD110">
+                          <block type="math_number" id="C[1qwP`/i1FM-M-J}^1%">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD111">
+                          <block type="math_number" id="{]87tXLeLjP_lzHP/w:N">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD112">
+                          <block type="math_number" id="MuEbb{vBc.WL9)~EgX6{">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD113">
+                          <block type="math_number" id="bmrUlyQOpky_T$h3x0Hq">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD114">
+                          <block type="math_number" id="J{V;/LX7zW_D!p{v=m?W">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD115">
+                          <block type="math_number" id="[+HNNi8DtKWHGYFZWl8u">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD116">
+                          <block type="math_number" id="US7VtM=I/GJoMoBCrsGH">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD117">
+                          <block type="math_number" id="r}mQ]@BhxX$Jgn~L%Hy$">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD118">
+                          <block type="math_number" id="X?^6Z3U`UWqCPk;kgVsY">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD119">
+                          <block type="math_number" id="hQYI*sRhea@pEXt|3{%v">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD120">
+                          <block type="math_number" id="cGY0!Xb]Ff,jl{@cMGlY">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD121">
+                          <block type="math_number" id="3OQ]96n]O9n=wN0n;cr~">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD122">
+                          <block type="math_number" id="XeV9|Qh~*GaC8N`1)*?G">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD123">
+                          <block type="math_number" id=")KT/bI+H1bbR,{Km6w0S">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD124">
+                          <block type="math_number" id="PDzf[!5n.RS9uZxF)]I:">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD125">
+                          <block type="math_number" id="`in|VEbM?|_`HOYs??/K">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD126">
+                          <block type="math_number" id="7Qzk7`cNb7{`-r7X!qXY">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD127">
+                          <block type="math_number" id="F6U}mSLH7pGe)I_1C5P]">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD128">
+                          <block type="math_number" id="{rg7T4N*jE@*SKT8@|zs">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD129">
+                          <block type="math_number" id="^KZ;V47EKhleHN*USqr.">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD130">
+                          <block type="math_number" id=".LodW=y{PM=9to:MdxL-">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD131">
+                          <block type="math_number" id="|;xJZ0dEg(x1+/.:R7/N">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD132">
+                          <block type="math_number" id=":%oq]r`jE`=HbwsV#2Nt">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD133">
+                          <block type="math_number" id=";LEy7=`4HC43!%_mmFuu">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD134">
+                          <block type="math_number" id="*dkLP_k6rfDUzr3uSBcM">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD135">
+                          <block type="math_number" id="1wJN!}Y)Y8rGxO5/sYRu">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD136">
+                          <block type="math_number" id="f8VQD5;pn{}A,:V8m@H7">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD137">
+                          <block type="math_number" id=".LRshSj|soMi4#3|2M?a">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD138">
+                          <block type="math_number" id="PZT%#/3{HQSa4vUEZSZd">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                        <value name="ADD139">
+                          <block type="math_number" id="IW#_Q0Q)J[9+U.dg?j^:">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                        <value name="ADD140">
+                          <block type="math_number" id="[~*R[hVS0gRjU2-U%oEq">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ADD141">
+                          <block type="math_number" id="g(X7J2zt__iB9[+e[kv?">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ADD142">
+                          <block type="math_number" id="9z2F8I-w|RNT/FggI_W]">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ADD143">
+                          <block type="math_number" id=",.`%3W1(P$5FjmQe5vZo">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="ADD144">
+                          <block type="math_number" id="TfB{ihhSJhURM_H!s`q$">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <value name="ADD145">
+                          <block type="math_number" id="..BEz,Jo/O#Zb0-lYRRR">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="ADD146">
+                          <block type="math_number" id="k9rizW||[s;Z|c1l+ntY">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <value name="ADD147">
+                          <block type="math_number" id="jn9)1%[Ll:Bh]a@?Z#,V">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <value name="ADD148">
+                          <block type="math_number" id="qDWVBJI%S.k!$,H^w;*@">
+                            <field name="NUM">8</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="g`1v^_tBe,bhx{21dNM#" collapsed="true">
+                        <field name="VAR" id="r0bX?=9smAS_NhUkJMe;" variabletype="">Analisa 2</field>
+                        <value name="VALUE">
+                          <block type="lists_create_with" id="#*Vt.^[+-55}6w)W+UEl">
+                            <mutation items="149"></mutation>
+                            <value name="ADD0">
+                              <block type="math_number" id="aYEi.288lbif}dAJhu,X">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="math_number" id="?{D~`kZ43i1=hc@9k)5z">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block type="math_number" id="`%u#8.;0EI8Cg`o0KBt)">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD3">
+                              <block type="math_number" id="q!*_z/XcyS+K$.L$/Im_">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD4">
+                              <block type="math_number" id="H7U;Ax+h^tlDcB!h;Mel">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD5">
+                              <block type="math_number" id="7_wpyVk5TMg2:e(^-tZa">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD6">
+                              <block type="math_number" id="$crYJ20z*XAs-c1{F(ah">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD7">
+                              <block type="math_number" id="EN~;+chahYVdvwh89FUx">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD8">
+                              <block type="math_number" id="09u%y2lg?3hYPam5G5o?">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD9">
+                              <block type="math_number" id="HF=*(nh,?d_Cb}f|lD:/">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD10">
+                              <block type="math_number" id="joR425paaueG-.Yi;N4@">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD11">
+                              <block type="math_number" id="`J7b;.L8.{XD.gYor!`u">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD12">
+                              <block type="math_number" id="h4pI]_s)yqn|@ElUu6[B">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD13">
+                              <block type="math_number" id="i?|KU`h0ZqGO6?h_=aA{">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD14">
+                              <block type="math_number" id="|64*{4!kC~Lxh:FD)u|m">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD15">
+                              <block type="math_number" id="j5;1,1e~`|2,OA!It{rA">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD16">
+                              <block type="math_number" id="ociO})-?j_E??mW;yjDG">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD17">
+                              <block type="math_number" id="sVoIC$/Jk/L7LB)Whg!P">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD18">
+                              <block type="math_number" id="SXN/g~LgkuWG4OUj/[pJ">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD19">
+                              <block type="math_number" id="%i%RJMG_MDOmHNVu4J#r">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD20">
+                              <block type="math_number" id="1uZ6vL1yM|s#QgQ47Oht">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD21">
+                              <block type="math_number" id="2)!W(5x)#M1,kPd:#Lj3">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD22">
+                              <block type="math_number" id="u*$%btry{H^y6fA^ucep">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD23">
+                              <block type="math_number" id="38+a1N9q({rKP5-RobPv">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD24">
+                              <block type="math_number" id="vWdy-#Fd#?!aP^Fahy?.">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD25">
+                              <block type="math_number" id="P,*lYdflf#^S3=.V,Pg6">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD26">
+                              <block type="math_number" id="kH%T?qK(${8?ggzu,Yc{">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD27">
+                              <block type="math_number" id="R;^.$xS9v;}GB(5Svvj`">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD28">
+                              <block type="math_number" id="2@)G0|,RywS6@F!2QfPE">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD29">
+                              <block type="math_number" id="BBTCf/ySSkPkO]=V3r?t">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD30">
+                              <block type="math_number" id="Y,Ncp$B(T#NK0@uqQ.o8">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD31">
+                              <block type="math_number" id="2IH{}#)$i17SS|#l9+4n">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD32">
+                              <block type="math_number" id="/FCd2O)f$T!rYq5X1Rg[">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD33">
+                              <block type="math_number" id="N!x?MD)z:Cv^}_hGgunN">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD34">
+                              <block type="math_number" id="]g;zKB?1FU;{VR*]_dM#">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD35">
+                              <block type="math_number" id="w~e+R}Dif`8/?hQ*rfB%">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD36">
+                              <block type="math_number" id="$9b(PP1N$)%Of)b|_Ny]">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD37">
+                              <block type="math_number" id="uysiu;hI0t1$.I^vXV4~">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD38">
+                              <block type="math_number" id=",pA$aHX%z5x$bFnCSHSy">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD39">
+                              <block type="math_number" id="]4#ZdaBC6,Nh;n7l]8LZ">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD40">
+                              <block type="math_number" id="9|9*U(F0UAmvZCCo?6D@">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD41">
+                              <block type="math_number" id="i`d_%gzt9d.?HogVv;a*">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD42">
+                              <block type="math_number" id="54pYAIOp)yy_RuiYoM8n">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD43">
+                              <block type="math_number" id="#X]@QQVDKabu36/|V}XY">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD44">
+                              <block type="math_number" id="XXtupi9E)|x3k?83#?LP">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD45">
+                              <block type="math_number" id="DF`%6$tH5~9B!3DjRTh5">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD46">
+                              <block type="math_number" id="~*nHo_F$mo?.A+`y[pmx">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD47">
+                              <block type="math_number" id="Y[PF3SOkuw!^Fz=GFH~X">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD48">
+                              <block type="math_number" id="-u0(.r0(!5Af1X;^$rXG">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD49">
+                              <block type="math_number" id="[s_5|N|2T3_]Hhg$2uL2">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD50">
+                              <block type="math_number" id="D6RonAv9X3H_Xk!5S76i">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD51">
+                              <block type="math_number" id="?ya_]bo7`2~,5tW0~MXI">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD52">
+                              <block type="math_number" id=".2ou.IEM+6-BgMTkd0Rg">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD53">
+                              <block type="math_number" id="zx4rK6|TY`eP,h;e0#~c">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD54">
+                              <block type="math_number" id=";*UB87^rmoQ!j1.WXw/F">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD55">
+                              <block type="math_number" id="D%~$H^__]kYs,WZUBKYe">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD56">
+                              <block type="math_number" id="_4AQMW7[bmJd^kvy4cz(">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD57">
+                              <block type="math_number" id="Z0T-e`vK;8Pq(eF*lmAV">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD58">
+                              <block type="math_number" id=";8zgWFKMbtOLQU;0qM5s">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD59">
+                              <block type="math_number" id="|nK;@q((8g{gD;{?7Z`h">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD60">
+                              <block type="math_number" id="r_[;b6F^`2DM/V1W%nl4">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD61">
+                              <block type="math_number" id="63P.9zMIgE^jO%`@MtST">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD62">
+                              <block type="math_number" id="BWI}0|GQ2g`bxe2/gq2u">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD63">
+                              <block type="math_number" id="B:2`4]FJgdMRxKw/v@MV">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD64">
+                              <block type="math_number" id="v~9jJD:-(Kk,{H$7,6QX">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD65">
+                              <block type="math_number" id="^D$A2pK-2059Xhlxg]w$">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD66">
+                              <block type="math_number" id="3F0,eDjDFixIEmY}e^R%">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD67">
+                              <block type="math_number" id="]5Z0[:?;o{^[o%)r))hN">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD68">
+                              <block type="math_number" id="o@-Q?by#5LTfwubc}BFK">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD69">
+                              <block type="math_number" id="]f#@k%;2zo/_m^F0e$Rq">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD70">
+                              <block type="math_number" id=";wEok`pge{,g3R/mQFQx">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD71">
+                              <block type="math_number" id="_k]Ikh@8h_lO=K^jz_6]">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD72">
+                              <block type="math_number" id="fHju:IjR.R!~1EG)U7u4">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD73">
+                              <block type="math_number" id=")0K}7)uY_=ZTC}2f[L=?">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD74">
+                              <block type="math_number" id="7zQW=Fbt`-wNisqP[j!Y">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD75">
+                              <block type="math_number" id="0[6|Wt=rdLn_mBY*Ec9V">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD76">
+                              <block type="math_number" id="MLGs~_SQdhjZW;f4..e1">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD77">
+                              <block type="math_number" id="$r2l`#W*=pMG1Oh~xA.^">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD78">
+                              <block type="math_number" id="cLWKtmg?docHa#C:$c?}">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD79">
+                              <block type="math_number" id="%oS?~D@M?(=mLDV]K=~)">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD80">
+                              <block type="math_number" id="#/m=*}G]tC%wFhBq?Ar0">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD81">
+                              <block type="math_number" id="/R+pVlja]]hB$d0KM@8i">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD82">
+                              <block type="math_number" id="^5(_V=73]MDEnM[7ZOis">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD83">
+                              <block type="math_number" id="M+39O::]6=(ZCE6gI]bG">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD84">
+                              <block type="math_number" id="[vKaU/etW|zbhe0=bYA%">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD85">
+                              <block type="math_number" id="_CBW@8e2oPc`.v0z}Za9">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD86">
+                              <block type="math_number" id="LnuSA`(+e3VE`DPjp^+7">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD87">
+                              <block type="math_number" id="ynox*+_}PU5O@+(l{em,">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD88">
+                              <block type="math_number" id="LZ%)/M/V6V!0Rp0s.Vl3">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD89">
+                              <block type="math_number" id="UnC!wM]Szm?(!D$~`eth">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <value name="ADD90">
+                              <block type="math_number" id="}Ma},5,;]UX7j!hT?_nF">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD91">
+                              <block type="math_number" id="r,;m,f$+R^#VZkUSok$9">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD92">
+                              <block type="math_number" id="kHw.9~9MN9OP[%:-Hh@r">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD93">
+                              <block type="math_number" id="V)RP(0c3}0A_k!|!6(+%">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD94">
+                              <block type="math_number" id="$:x960HBhO$%FQ1P0eA[">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD95">
+                              <block type="math_number" id="]Cg6lbp*#qk`m,cEi$nr">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD96">
+                              <block type="math_number" id="bY;_3e]v4Ca:K+40@/.g">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD97">
+                              <block type="math_number" id="Jd26GtUWFuN?|4v+-*/}">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD98">
+                              <block type="math_number" id="b$j[!EiKB]k$yGlr8~MP">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD99">
+                              <block type="math_number" id="0?|[=_L9Vl,#e3SuG2Eg">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD100">
+                              <block type="math_number" id="BrE_z:Jr+T+b|{AH?=)2">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD101">
+                              <block type="math_number" id="uMFa+ctQ^LMhE*M0(k3i">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD102">
+                              <block type="math_number" id="ZR^?M}V[|(]+9E!Qe!]U">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD103">
+                              <block type="math_number" id="[aNm$mJF7`miGP|S{vDO">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD104">
+                              <block type="math_number" id="B9Kmrb.D+@/;02vt8h@I">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD105">
+                              <block type="math_number" id="SjfOXz)[s_s4;(wrJchR">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD106">
+                              <block type="math_number" id="(:*2PXD2OtLi^JZq$nUW">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD107">
+                              <block type="math_number" id="Iz~}NoObb.-OdxT;Vv;D">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD108">
+                              <block type="math_number" id="b$W{dt5J1G)zQiT8ROk8">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD109">
+                              <block type="math_number" id="JdN?ifJ@j$8(0R*eMMsN">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD110">
+                              <block type="math_number" id="k`+(G?rgvP]-*|z#SPCO">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD111">
+                              <block type="math_number" id="/s{)Q1,)4n(O!;[(/[$Q">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD112">
+                              <block type="math_number" id="3Q`:7R7bFc;w?W!%W.b}">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD113">
+                              <block type="math_number" id="XGDOr$*}~1RqbW3;xf;j">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD114">
+                              <block type="math_number" id="T|^$bqHQ]z-bHQP=a#j*">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD115">
+                              <block type="math_number" id="N-!DFBKeDZh@DpAgk6[0">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD116">
+                              <block type="math_number" id="i.KlEE2sVZ|UPyY4oWj8">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD117">
+                              <block type="math_number" id="*7K$DmgWu7~,SlM~=KM*">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD118">
+                              <block type="math_number" id=";V?U:S(2!Emh*FNa]wlA">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD119">
+                              <block type="math_number" id="LOmfew(U8z_.U5hV!%)d">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD120">
+                              <block type="math_number" id="6y8*WlqT5)#AMD?EHP`/">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD121">
+                              <block type="math_number" id="Md[S2ICwAkQ%SSel_n+x">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD122">
+                              <block type="math_number" id="Mg(]`tLHm~#$`wsnhxNu">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD123">
+                              <block type="math_number" id="@*FBMN+S4ln,M03/-c:2">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD124">
+                              <block type="math_number" id="eBOUl@?E/-lg49OG#i)n">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD125">
+                              <block type="math_number" id="v%t0KpJa9cew81*qrDzj">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD126">
+                              <block type="math_number" id="Jf9kH:{A!{LDWymLN_6i">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD127">
+                              <block type="math_number" id="gB#1SztnHfDjf5|yEc`b">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD128">
+                              <block type="math_number" id="g~P89)K;5|wYI02S4=8C">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD129">
+                              <block type="math_number" id="rG~h$_g49.d)!R2-N;+b">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD130">
+                              <block type="math_number" id="w9J%04;j{IE|zmWtrmpQ">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD131">
+                              <block type="math_number" id="=s{e8xlj2w4b!$`x~-0^">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD132">
+                              <block type="math_number" id="S)F^8a]ts`gq?iL*ry/c">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD133">
+                              <block type="math_number" id="xM)_X?zH^}]Mzp%O6k7o">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD134">
+                              <block type="math_number" id="uC%@_mt{:vUu=,$3-{t}">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD135">
+                              <block type="math_number" id="@O7]$CLfu3t+?AI{v,ET">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD136">
+                              <block type="math_number" id="bxQQe%Us9/8#Z?XqZG=~">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD137">
+                              <block type="math_number" id="B}YOjRC(rX1Q9dIL,0^-">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD138">
+                              <block type="math_number" id=".$A:NQ4S4QP?qp_8!w(i">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD139">
+                              <block type="math_number" id="b2GJv/ekm8F~Sf$hrmmn">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD140">
+                              <block type="math_number" id="3YT|vqw_jqdp;ND/Tz7:">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD141">
+                              <block type="math_number" id="M.L|(:Jaz^?mj.-^,J^e">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD142">
+                              <block type="math_number" id="Qu{k[ut9*`4zcUZp[X$u">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD143">
+                              <block type="math_number" id="0+4g/veBgcd!;HF==MC:">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="ADD144">
+                              <block type="math_number" id="cHg$od[BbRp+OwWj1[Bl">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <value name="ADD145">
+                              <block type="math_number" id="?N[!VijtZC.*1)4N.~SC">
+                                <field name="NUM">7</field>
+                              </block>
+                            </value>
+                            <value name="ADD146">
+                              <block type="math_number" id="FG8}l6Yyp6`D!76wf5.F">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                            <value name="ADD147">
+                              <block type="math_number" id="[COs;/MQFp9R)*8m?B;N">
+                                <field name="NUM">9</field>
+                              </block>
+                            </value>
+                            <value name="ADD148">
+                              <block type="math_number" id="%GW5u)`w6:U2kpO!l%4F">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="R@YJ#@}1gKe/^.J8BD.P">
+                            <field name="VAR" id="7xQg6.K{z7F*cua7CtFq" variabletype="">NEXT DIGITS</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="CI1o#Qw0BqWF:xh0,g4o">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="yB/`!ZtScWQl!xb!{4,J">
+                                <field name="VAR" id="ln@GB@SG^m)pkh3SMT@V" variabletype="">NEXT DIGITS 2</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id=";I^}NI@usXHU{s`HU0GM">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="SUBMARKET">
+      <block type="tradeOptions" id="}-`}onxphf65|!2T,,q(">
+        <field name="DURATIONTYPE_LIST">t</field>
+        <field name="CURRENCY_LIST">USD</field>
+        <field name="BARRIEROFFSETTYPE_LIST">+</field>
+        <field name="SECONDBARRIEROFFSETTYPE_LIST">-</field>
+        <value name="DURATION">
+          <block type="lists_getIndex" id="An2n(N{pPO`%wMl@D083">
+            <mutation statement="false" at="true"></mutation>
+            <field name="MODE">GET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="VALUE">
+              <block type="variables_get" id="~gal4,(xYWYDd6@aeHG%">
+                <field name="VAR" id="r0bX?=9smAS_NhUkJMe;" variabletype="">Analisa 2</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="variables_get" id="Olj!0GrG,}bXdwzvd(gZ">
+                <field name="VAR" id="ln@GB@SG^m)pkh3SMT@V" variabletype="">NEXT DIGITS 2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="AMOUNT">
+          <block type="variables_get" id="wmq.hSL^_jM1@!DKzg@P">
+            <field name="VAR" id="t6)FRH@rK@#PulS^T1b|" variabletype="">stake awal</field>
+          </block>
+        </value>
+        <value name="PREDICTION">
+          <block type="lists_getIndex" id="o=i}[T6IMadDa(FveDw4">
+            <mutation statement="false" at="true"></mutation>
+            <field name="MODE">GET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="VALUE">
+              <block type="variables_get" id="i~q$~d^pW5A:)O#W^*R6">
+                <field name="VAR" id="(mdNFspLoz_D3b;?KB;j" variabletype="">Analisa</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="variables_get" id="sZ+55U6L3MNga[RrS~mL">
+                <field name="VAR" id="7xQg6.K{z7F*cua7CtFq" variabletype="">NEXT DIGITS</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="after_purchase" id="si+/*VwS7HpjJ^2f}|3g" x="475" y="74">
+    <statement name="AFTERPURCHASE_STACK">
+      <block type="controls_if" id="iR[tJk2FLEoxVM(S!U]|">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="contract_check_result" id="3zDCo~H(ZKb[AE.r_I}x">
+            <field name="CHECK_RESULT">win</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="/Zn7[ZO*el~9hTD,pRZ6">
+            <field name="VAR" id="t6)FRH@rK@#PulS^T1b|" variabletype="">stake awal</field>
+            <value name="VALUE">
+              <block type="variables_get" id="+A`%%flu?PcpGLC9W0};">
+                <field name="VAR" id="K1#(Yp``RbnrOixGup+3" variabletype="">stake</field>
+              </block>
+            </value>
+            <next>
+              <block type="notify" id="nJD4Kmf9=XURg+QzqIF_" collapsed="true">
+                <field name="NOTIFICATION_TYPE">info</field>
+                <field name="NOTIFICATION_SOUND">job-done</field>
+                <value name="MESSAGE">
+                  <block type="text_join" id="a?phdf{q?#9yl6DG*%E4">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="YriP:`UXrrS17`B:o3#s">
+                        <field name="TEXT">YES PROFIT= $</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="read_details" id="WZIwY/E@4?2mrPt+fh2S">
+                        <field name="DETAIL_INDEX">4</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="/w+}VIWw@;6Oov}2w2Z7">
+                    <field name="VAR" id="ln@GB@SG^m)pkh3SMT@V" variabletype="">NEXT DIGITS 2</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id=";bDfa89q^_6!c?[Hq|3Z">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <shadow type="math_number" id="pW#fXmS`%/LynX9t|h-z">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="]AE#c|3Hb$t*E*IR;=/h">
+                            <field name="VAR" id="ln@GB@SG^m)pkh3SMT@V" variabletype="">NEXT DIGITS 2</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="PQWpeOBLu^:6Clbu`QnY">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="variables_set" id="IE@f1g6^k@4Bvi|@([h4">
+            <field name="VAR" id="t6)FRH@rK@#PulS^T1b|" variabletype="">stake awal</field>
+            <value name="VALUE">
+              <block type="variables_get" id="`3f8vR]YtGAYO=@dha~x">
+                <field name="VAR" id="K1#(Yp``RbnrOixGup+3" variabletype="">stake</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="0)j#3~~)hiQM9L,M7I(@">
+                <field name="VAR" id="ln@GB@SG^m)pkh3SMT@V" variabletype="">NEXT DIGITS 2</field>
+                <value name="VALUE">
+                  <block type="math_arithmetic" id="4LW1C_o7)cAOeKl}+/$7">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <shadow type="math_number" id="pW#fXmS`%/LynX9t|h-z">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="q?u1#L`I8Df+`A4{Ry):">
+                        <field name="VAR" id="ln@GB@SG^m)pkh3SMT@V" variabletype="">NEXT DIGITS 2</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="SoLn3#94h4e2O]!G#/qn">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="notify" id="@d+`]3^62mElcu)W33G_" collapsed="true">
+                    <field name="NOTIFICATION_TYPE">warn</field>
+                    <field name="NOTIFICATION_SOUND">silent</field>
+                    <value name="MESSAGE">
+                      <block type="text_join" id="?fxFqz|!aFaM5vzzAg=T">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="U.hBn^L^c`:1{#`dT#Ka">
+                            <field name="TEXT">SABAR YA,, TETAP SEMANGAT : $</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="math_single" id="U5+DrijKYKmA|u|XRQj8">
+                            <field name="OP">ABS</field>
+                            <value name="NUM">
+                              <shadow type="math_number" id="GleSn`9j7Cm7/dqg}FIA">
+                                <field name="NUM">9</field>
+                              </shadow>
+                              <block type="read_details" id="uJiBd#be~R=J%`t;1!BP">
+                                <field name="DETAIL_INDEX">4</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="timeout" id="Ix6F7Q{lE8#fd=b;e.Cm">
+                        <statement name="TIMEOUTSTACK">
+                          <block type="trade_again" id="I5).HjaYdx6P{W]zhI5d"></block>
+                        </statement>
+                        <value name="SECONDS">
+                          <shadow type="math_number" id="[ut[EW7bt_AxUqRuZHS=">
+                            <field name="NUM">0</field>
+                          </shadow>
+                          <block type="variables_get" id=",QApJ@]-86xD,^{Pn^ZN">
+                            <field name="VAR" id="r0bX?=9smAS_NhUkJMe;" variabletype="">Analisa 2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="umeZpd*r;:ebd%|t/0r3">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id=")4qBmMZ|fB[5Nb4sN@Q^">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <block type="total_profit" id="(PdZDSsV8Q7XCIo`PSM["></block>
+                </value>
+                <value name="B">
+                  <block type="variables_get" id="^3il(nz)i`2nF2+S%7m_">
+                    <field name="VAR" id="ck^@burIyZ9u(1V$FidS" variabletype="">target profit</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="trade_again" id="zjE#3yf^GS)AhO@{(r@^"></block>
+            </statement>
+            <statement name="ELSE">
+              <block type="text_print" id="U[`@,_Qr|ld@GmMMU_]d" collapsed="true">
+                <value name="TEXT">
+                  <shadow type="text" id="kqlrIk.GO.^}hI,PoUV)">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="text_join" id="e.xYb~qGia(A^5Q3tTEL">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="8u879FnfCx={qIH?dcQQ">
+                        <field name="TEXT">SELAMAT TARGET PROFIT TERCAPAI &gt;&gt; $</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="total_profit" id="(|Ovc_j]YP$E.I~m*dbn"></block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="before_purchase" id="KN1,f]4$QK5.HU-x8z.a" x="-168" y="573">
+    <statement name="BEFOREPURCHASE_STACK">
+      <block type="notify" id="@K[BSr5DIC$!_s)?DWgy">
+        <field name="NOTIFICATION_TYPE">success</field>
+        <field name="NOTIFICATION_SOUND">silent</field>
+        <value name="MESSAGE">
+          <block type="text" id="BAHDr.G(%$DOl}kO9(,*">
+            <field name="TEXT">PLAY ON</field>
+          </block>
+        </value>
+        <next>
+          <block type="purchase" id="a[eV./hmXC:;dr*VbM/f">
+            <field name="PURCHASE_LIST">DIGITDIFF</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="tick_analysis" id="A.+la]8l9!C?W]yGeI.t" collapsed="true" x="370" y="573">
+    <statement name="TICKANALYSIS_STACK">
+      <block type="controls_if" id="p3Yd[4]Q*B8Fl}D9lkx!">
+        <value name="IF0">
+          <block type="check_direction" id="ax*%;^(8C%Ru{@zHs(Xg">
+            <field name="CHECK_DIRECTION">fall</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="notify" id="kP$qPzOFjB7LSsp%tC]i">
+            <field name="NOTIFICATION_TYPE">error</field>
+            <field name="NOTIFICATION_SOUND">silent</field>
+            <value name="MESSAGE">
+              <block type="text_join" id="Wbwu#k10{ANwM34f4P28">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="G3G)/#OHq#[y9V-,A-ig">
+                    <field name="TEXT">LAST SPOT DIGITS = </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="last_digit" id="MDD=j*5aj}zmC)eFq5-r"></block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="3pHR=|xDQP06WgE{z{@N">
+            <value name="IF0">
+              <block type="check_direction" id="=a4mINf)b-1v!EoAr3Q*">
+                <field name="CHECK_DIRECTION">rise</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="notify" id="JY,QT5*ZQ3BobzKc8;aR">
+                <field name="NOTIFICATION_TYPE">success</field>
+                <field name="NOTIFICATION_SOUND">silent</field>
+                <value name="MESSAGE">
+                  <block type="text_join" id="=RrMh;SXN5;%u)86*t#l">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="c`Hx.]s*|NuQ*MgM)l@u">
+                        <field name="TEXT">LAST SPOT DIGITS = </field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="last_digit" id="5kD-r!:AXVq]3-gtKW*X"></block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
