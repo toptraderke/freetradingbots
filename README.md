@@ -32,7 +32,7 @@ Installation
 Follow the individual README files inside each bot's folder for installation instructions.
 
 Create an Account: 
-https://track.deriv.com/_xM08REnULENBMfcXPt5VjGNd7ZgqdRLk/1/
+https://rb.gy/xqt44t
 
 Usage
 Check the guide inside each bot’s directory to learn how to deploy and customize the trading bot.
