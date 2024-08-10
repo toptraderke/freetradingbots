@@ -10,8 +10,8 @@ import os
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load API tokens from environment variables
-DEMO_API_TOKEN = os.getenv('DEMO_API_TOKEN', 'YOUR_DEMO_API_TOKEN')
-REAL_API_TOKEN = os.getenv('REAL_API_TOKEN', 'YOUR_REAL_API_TOKEN')
+DEMO_API_TOKEN = os.getenv('DEMO_API_TOKEN', 'RttWD40xhiehgI1')
+REAL_API_TOKEN = os.getenv('REAL_API_TOKEN', '33Q96VIqrjK8BiP')
 
 # Define the endpoint
 endpoint = 'https://api.deriv.com'
