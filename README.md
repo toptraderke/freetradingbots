@@ -1,51 +1,114 @@
-# freeTradingBots
-This is a repository for free bots that you can use to trade at your own discretion and earn millions.
-
-Free Trading Bots Repository: Automate Your Trading Strategies
-Description
-Welcome to the Free Trading Bots Repository! This repository is your one-stop solution for all free and open-source trading bots across various platforms and languages. From cryptocurrency trading bots like Bitcoin, Ethereum, and other altcoins to traditional stock market trading, we've got you covered. Automate your trading strategies and optimize your profits without spending a dime on expensive bots.
-
-
-Keywords
-Free Trading Bots
-Crypto Trading Bots
-Stock Market Trading Bots
-Algorithmic Trading
-Automated Trading
-Forex Trading Bots
-Open Source Trading
-Python Trading Bot
-JavaScript Trading Bot
-Features
-Variety of Bots: Collection of bots for Forex, Stocks, and Cryptocurrency markets.
-Multi-Language Support: Bots are available in languages such as Python, JavaScript, Java, and more.
-Cross-Platform: Bots that can run on various platforms like Binance, MetaTrader, Coinbase, etc.
-Easy to Use: Well-documented code with setup guides for each bot.
-Community Support: A community of developers and traders contributing to the project.
-Table of Contents
-Installation
-Usage
-Contributing
-License
-FAQs
-Installation
-Follow the individual README files inside each bot's folder for installation instructions.
-
-Create an Account: 
-https://rb.gy/xqt44t
-
-Usage
-Check the guide inside each bot’s directory to learn how to deploy and customize the trading bot.
-
-Contributing
-Feel free to contribute to this repository by creating a pull request or opening an issue. For detailed contributing guidelines, check out the CONTRIBUTING.md file.
-
-License
-All bots in this repository are open-source under the MIT License. See the LICENSE file for details.
-
-FAQs
-Visit our FAQs section to find answers to commonly asked questions.
-
-Note: Trading involves risks. It's recommended to understand the risks before deploying any bot in a live trading environment.
-
-If you find this repository useful, please star it to make it more visible to the community. Happy Trading! 📈
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="" id="gX!qt],R*YC4Q_Q1k.MJ">stake</variable>
+    <variable type="" id="Bm]H;F5p^gxqx1h2G+Sn">lastTradeResult</variable>
+  </variables>
+  <block type="trade" id="^+RyZC9NJY1L*7HcX56v" x="12" y="12">
+    <field name="TRADE_TYPE">CALL</field>
+    <field name="DURATION">1</field>
+    <field name="CONTRACT_TYPE">DIGITUNDER</field>
+    <value name="DURATION_VALUE">
+      <block type="math_number" id="bh%:lGh9Ao3Sx[aiJCMz">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <value name="PAYOUT">
+      <block type="math_number" id="x-cB+Y5K0DR=K#-nM=TF">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <value name="BARRIER">
+      <block type="math_number" id="yD_-d|A-XtX.}c~Z6Atp">
+        <field name="NUM">9</field>
+      </block>
+    </value>
+    <value name="AMOUNT">
+      <block type="variables_get" id="nY=;7U,,t8oz2[09FzH=">
+        <field name="VAR" id="gX!qt],R*YC4Q_Q1k.MJ">stake</field>
+      </block>
+    </value>
+  </block>
+  <block type="on_finish" id="HSuRU2i6,+zJV@F1gD*b" x="12" y="112">
+    <value name="BOT_FINISHED">
+      <block type="variables_set" id="Y?@@Ba#LaBIlp,3dC[pe">
+        <field name="VAR" id="Bm]H;F5p^gxqx1h2G+Sn">lastTradeResult</field>
+        <value name="VALUE">
+          <block type="check_result" id="6Yh^:4;Vp%[CxRgyb1%S"></block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="controls_if" id="J59-RW0^QmJZrxl{q,Z2">
+        <value name="IF0">
+          <block type="logic_compare" id="84pFvH_[HmrN_0m.d1Pd">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id=")a9h]Z;4Ug5J:L^kgRH|">
+                <field name="VAR" id="Bm]H;F5p^gxqx1h2G+Sn">lastTradeResult</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="G]aCLcG:-/FyJqP:?exk">
+                <field name="TEXT">loss</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="WQtUMgpW^kM5H.Z5XODl">
+            <value name="IF0">
+              <block type="logic_boolean" id="pzC,{_J{?SJ!.]!u=~UV">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="trade" id="S9gfMAIXyQq^%kzT9Tw-">
+                <field name="TRADE_TYPE">CALL</field>
+                <field name="DURATION">1</field>
+                <field name="CONTRACT_TYPE">DIGITUNDER</field>
+                <value name="DURATION_VALUE">
+                  <block type="math_number" id="5*Ztck[m$9P_:o.6U,ls">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="PAYOUT">
+                  <block type="math_number" id="p]GZ}6a_9jI,5Mgm=w*4">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="BARRIER">
+                  <block type="math_number" id="5sHPHVJ}0`^:hhyL%.9y">
+                    <field name="NUM">7</field>
+                  </block>
+                </value>
+                <value name="AMOUNT">
+                  <block type="math_arithmetic" id="41yx4HLQY0R?I@ajA]eA">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <block type="variables_get" id="m9.NB{F[EDKc{yOd4EoI">
+                        <field name="VAR" id="gX!qt],R*YC4Q_Q1k.MJ">stake</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="^}+ZOoR+qQDTiyZ0-Q*~">
+                        <field name="NUM">3</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+  <block type="variables_set" id="Z3%Q-1kP9hsfCboIo2Dt" x="12" y="312">
+    <field name="VAR" id="gX!qt],R*YC4Q_Q1k.MJ">stake</field>
+    <value name="VALUE">
+      <block type="math_number" id="NStxS69]=;OUgE*26QfS">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+  </block>
+</xml>
