@@ -34,9 +34,9 @@ Follow the individual README files inside each bot's folder for installation ins
 Create an Account: 
 https://rb.gy/xqt44t
 
-# WOndering how to deposit
+# Wondering how to deposit
 
-# Please follow this steps: -
+# Simply deposit with MPESA by following this steps: -
 - Kindly send the amount you want to deposit to till 4475834 (GEIGHTFORGEIGHT INVESTMENT)
 - whatsapp your cr number to 0792 673 175
 - wait 1 minute and the deposit should be done
