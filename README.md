@@ -34,6 +34,15 @@ Follow the individual README files inside each bot's folder for installation ins
 Create an Account: 
 https://rb.gy/xqt44t
 
+# WOndering how to deposit
+
+# Please follow this steps: -
+- Kindly send the amount you want to deposit to till 4475834 (GEIGHTFORGEIGHT INVESTMENT)
+- whatsapp your cr number to 0792 673 175
+- wait 1 minute and the deposit should be done
+- check your account to ensure the dollars have been credited
+
+- 
 Usage
 Check the guide inside each bot’s directory to learn how to deploy and customize the trading bot.
 
