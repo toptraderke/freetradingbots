@@ -42,6 +42,9 @@ https://rb.gy/xqt44t
 - wait 1 minute and the deposit should be done
 - check your account to ensure the dollars have been credited
 
+# WHERE TO LEARN FOR FREE
+Youtube: https://www.youtube.com/channel/UCVpd8EuS8yAWMGkNtZ23Y3A
+
 - 
 Usage
 Check the guide inside each bot’s directory to learn how to deploy and customize the trading bot.
