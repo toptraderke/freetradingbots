@@ -1,0 +1,32 @@
+import ccxt
+import time
+
+# Create a new FTX client.
+ftx = ccxt.ftx()
+
+# Authenticate with your FTX API key and secret.
+ftx.apiKey = 'YOUR_API_KEY'
+ftx.secret = 'YOUR_SECRET'
+
+# Define the target price.
+target_price = 10000
+
+# Define the order parameters.
+order_params = {
+    'symbol': 'BTC/USD',
+    'side': 'buy',
+    'type': 'limit',
+    'price': target_price,
+    'amount': 0.1,
+}
+
+# Create the order.
+order = ftx.create_order('BTC/USD', 'limit', 'buy', 0.1, target_price)
+
+# Wait for the order to be filled.
+while order['status'] != 'closed':
+    time.sleep(0.1)
+    order = ftx.fetch_order(order['id'])
+
+# Print the order details.
+print(order)
