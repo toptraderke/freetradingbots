@@ -1,0 +1,119 @@
+# Save the provided script as a Python file
+script_content = """
+import pandas as pd
+import numpy as np
+import requests
+import time
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger()
+
+# Define the API endpoints and keys
+api_url = 'https://api.broker.com'  # Replace with the actual broker's API URL
+api_key = 'YOUR_API_KEY'  # Replace with your API key
+
+# RSI Calculation
+def calculate_rsi(data, window=14):
+    delta = data['close'].diff()
+    gain = (delta.where(delta > 0, 0)).rolling(window=window).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(window=window).mean()
+    rs = gain / loss
+    rsi = 100 - (100 / (1 + rs))
+    return rsi
+
+# MACD Calculation
+def calculate_macd(data, short_window=12, long_window=26, signal_window=9):
+    short_ema = data['close'].ewm(span=short_window, adjust=False).mean()
+    long_ema = data['close'].ewm(span=long_window, adjust=False).mean()
+    macd = short_ema - long_ema
+    signal = macd.ewm(span=signal_window, adjust=False).mean()
+    macd_diff = macd - signal
+    return macd, signal, macd_diff
+
+# Fetch historical data
+def fetch_data(api_url, asset, duration, api_key):
+    response = requests.get(f'{api_url}/historical', params={'asset': asset, 'duration': duration}, headers={'Authorization': f'Bearer {api_key}'})
+    data = response.json()
+    df = pd.DataFrame(data)
+    df['rsi'] = calculate_rsi(df)
+    df['macd'], df['signal'], df['macd_diff'] = calculate_macd(df)
+    return df
+
+# Trading Logic
+def trend_reversal_strategy(api_url, api_key, initial_stake, risk_reward_ratio, duration):
+    balance = 1000  # Starting balance for simulation purposes
+    stake = initial_stake
+    total_profit = 0
+    total_loss = 0
+
+    while total_profit < 100 and total_loss < 50:  # Example thresholds
+        data = fetch_data(api_url, 'Volatility 50 (1s) Index', duration, api_key)
+        latest_data = data.iloc[-1]
+
+        # Determine trade signal
+        if latest_data['rsi'] < 30 and latest_data['macd_diff'] > 0:
+            trade_signal = 'buy'
+        elif latest_data['rsi'] > 70 and latest_data['macd_diff'] < 0:
+            trade_signal = 'sell'
+        else:
+            trade_signal = 'hold'
+
+        if trade_signal != 'hold':
+            # Place trade
+            response = requests.post(
+                f'{api_url}/trade',
+                headers={'Authorization': f'Bearer {api_key}'},
+                json={
+                    'asset': 'Volatility 50 (1s) Index',
+                    'trade_type': trade_signal,
+                    'amount': stake,
+                    'duration': 5  # 5 Ticks
+                }
+            )
+            trade_result = response.json()
+
+            # Simulate trade outcome (replace with actual outcome from the response)
+            trade_outcome = 'win' if trade_result['outcome'] == 'win' else 'lose'
+
+            # Calculate profit/loss and adjust stake
+            if trade_outcome == 'win':
+                profit = stake * risk_reward_ratio
+                total_profit += profit
+                stake = initial_stake  # Reset stake after a win
+                logger.info(f'Win: +{profit} USD, Total Profit: {total_profit} USD')
+            else:
+                loss = stake
+                total_loss += loss
+                stake *= risk_reward_ratio  # Increase stake proportionally to the risk-reward ratio
+                logger.info(f'Loss: -{loss} USD, Total Loss: {total_loss} USD, Next Stake: {stake} USD')
+
+        time.sleep(1)  # Wait for 1 second before the next trade
+
+        # Check loss threshold to stop the strategy
+        if total_loss >= 50:
+            logger.warning('Loss threshold reached, stopping the strategy.')
+            break
+
+    if total_profit >= 100:
+        logger.info('Profit threshold reached, stopping the strategy.')
+
+    return total_profit, total_loss
+
+# Run the Trend Reversal strategy
+initial_stake = 1
+risk_reward_ratio = 3  # 1:3 risk-reward ratio
+duration = 1  # Duration of 1 tick for data fetching
+
+trend_reversal_strategy(api_url, api_key, initial_stake, risk_reward_ratio, duration)
+"""
+
+# Define the file path
+file_path = "/mnt/data/trend_reversal_strategy.py"
+
+# Write the script to the file
+with open(file_path, "w") as file:
+    file.write(script_content)
+
+file_path
