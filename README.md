@@ -37,7 +37,7 @@ https://rb.gy/xqt44t
 # Wondering how to deposit
 
 #option 1: use Browser
-- Visit money.money8gg.com
+- Visit [money.money8gg.com](https://money.money8gg.com/signin)
 - click i don't have an account sign up
 - link your deriv account
 - confirm your details
