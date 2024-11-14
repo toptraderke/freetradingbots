@@ -36,9 +36,21 @@ https://rb.gy/xqt44t
 
 # Wondering how to deposit
 
-# Simply deposit with MPESA by following this steps: -
+#option 1: use Browser
+- Visit money.money8gg.com
+- click i don't have an account sign up
+- link your deriv account
+- confirm your details
+- Add your phonenumber(the one you use for mpesa to receive money during withdraws and to receive prompt during deposits)
+- Add your password
+- You are redirected back to sign in (use your email and passwordyou added to login)
+- If you want to deposit - simply click deposit on the home page
+- If you want to withdraw simply press withdraw on home screen or even on side bar
+- If you face any issues text me at  +254 792 673 175
+
+# Ption 2: Manual option( send the money to till then send your CR number to whatsapp) -
 - Kindly send the amount you want to deposit to till 4475834 (GEIGHTFORGEIGHT INVESTMENT)
-- whatsapp your cr number to 0792 673 175
+- whatsapp your cr number to +254 792 673 175
 - wait 1 minute and the deposit should be done
 - check your account to ensure the dollars have been credited
 
