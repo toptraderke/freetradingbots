@@ -1,0 +1,174 @@
+pip install pandas numpy ta requests flask
+import pandas as pd
+import numpy as np
+import requests
+from ta.momentum import RSIIndicator
+from ta.volatility import BollingerBands
+from ta.trend import SMAIndicator
+from flask import Flask, request, jsonify
+import json
+
+app = Flask(__name__)
+
+# Configuration
+API_URL = "https://api.example.com/market_data"  # Replace with actual API endpoint
+RSI_PERIOD = 14
+BB_WINDOW = 20
+BB_STD_DEV = 2
+SMA_PERIOD = 50
+
+# Fetch market data
+def fetch_market_data():
+    try:
+        response = requests.get(API_URL)
+        data = response.json()
+        df = pd.DataFrame(data)
+        df['timestamp'] = pd.to_datetime(df['timestamp'])
+        df.set_index('timestamp', inplace=True)
+        return df
+    except Exception as e:
+        print(f"Error fetching market data: {e}")
+        return pd.DataFrame()
+
+# Analyze market data
+def analyze_market_data(df):
+    df['rsi'] = RSIIndicator(df['close'], window=RSI_PERIOD).rsi()
+    bb = BollingerBands(df['close'], window=BB_WINDOW, window_dev=BB_STD_DEV)
+    df['bb_high'] = bb.bollinger_hband()
+    df['bb_low'] = bb.bollinger_lband()
+    df['sma'] = SMAIndicator(df['close'], window=SMA_PERIOD).sma_indicator()
+    return df
+
+# Candlestick pattern recognition
+def recognize_candlestick_patterns(df):
+    df['candle_type'] = np.where(df['close'] > df['open'], 'bullish', 'bearish')
+    df['candle_body'] = abs(df['close'] - df['open'])
+    df['candle_wick'] = df[['high', 'low']].apply(lambda x: x[0] - x[1], axis=1)
+    return df
+
+# Make a prediction
+def make_prediction(df):
+    last_row = df.iloc[-1]
+    prediction = "hold"
+    
+    # Simple prediction logic
+    if last_row['rsi'] < 30 and last_row['close'] < last_row['bb_low']:
+        prediction = "over 2"
+    elif last_row['rsi'] > 70 and last_row['close'] > last_row['bb_high']:
+        prediction = "under 7"
+    elif last_row['close'] > last_row['sma']:
+        prediction = "over 3"
+    elif last_row['close'] < last_row['sma']:
+        prediction = "under 6"
+    
+    return prediction
+
+@app.route('/predict', methods=['GET'])
+def predict():
+    df = fetch_market_data()
+    if df.empty:
+        return jsonify({'error': 'Unable to fetch market data'})
+    
+    df = analyze_market_data(df)
+    df = recognize_candlestick_patterns(df)
+    prediction = make_prediction(df)
+    
+    result = {
+        'prediction': prediction,
+        'analysis': df.tail().to_dict(orient='records'),
+        'owner': 'davis pro 1 bot'
+    }
+    
+    return jsonify(result)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis Pro 1 Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .prediction {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Market Prediction</h1>
+        <button onclick="getPrediction()">Get Prediction</button>
+        <p class="prediction" id="prediction"></p>
+        <table id="analysis-table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Close</th>
+                    <th>RSI</th>
+                    <th>Bollinger High</th>
+                    <th>Bollinger Low</th>
+                    <th>SMA</th>
+                    <th>Candle Type</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        async function getPrediction() {
+            try {
+                const response = await fetch('/predict');
+                const data = await response.json();
+                if (data.error) {
+                    document.getElementById('prediction').innerText = `Error: ${data.error}`;
+                    return;
+                }
+                document.getElementById('prediction').innerText = `Prediction: ${data.prediction} (${data.owner})`;
+                const tableBody = document.getElementById('analysis-table').getElementsByTagName('tbody')[0];
+                tableBody.innerHTML = '';
+                data.analysis.forEach(row => {
+                    const newRow = tableBody.insertRow();
+                    Object.values(row).forEach(cell => {
+                        const newCell = newRow.insertCell();
+                        newCell.innerText = cell;
+                    });
+                });
+            } catch (error) {
+                console.error('Error fetching prediction:', error);
+            }
+        }
+    </script>
+</body>
+</html>
+python trading_bot.py
