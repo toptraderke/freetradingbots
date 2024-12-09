@@ -6,7 +6,7 @@ Description
 Welcome to the Free Trading Bots Repository! This repository is your one-stop solution for all free and open-source trading bots across various platforms and languages. From cryptocurrency trading bots like Bitcoin, Ethereum, and other altcoins to traditional stock market trading, we've got you covered. Automate your trading strategies and optimize your profits without spending a dime on expensive bots.
 
 
-Keywords
+
 Free Trading Bots
 Crypto Trading Bots
 Stock Market Trading Bots
