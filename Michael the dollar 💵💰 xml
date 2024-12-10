@@ -1,0 +1,94 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+  <variables>
+    <variable type="" id="ITiw_xSBxuYP6qNF)F|h">Max Loss Amount</variable>
+    <variable type="" id="oQ~TQa?Dq78]MM},8;*l">Expected Profit</variable>
+    <variable type="" id="gsQah}04l(VNTYJ`*;{Y">Initial Amount</variable>
+    <variable type="" id="KaO9g@ULafq66uv?o*cA">Win Amount</variable>
+    <variable type="" id="j4S-npH54+xL{.HbzV3c">Next Trade Condition</variable>
+  </variables>
+  <block type="trade" id="trade" x="-229" y="-91">
+    <field name="MARKET_LIST">volidx</field>
+    <field name="SUBMARKET_LIST">random_index</field>
+    <field name="SYMBOL_LIST">R_50</field>
+    <field name="TRADETYPECAT_LIST">digits</field>
+    <field name="TRADETYPE_LIST">overunder</field>
+    <field name="TYPE_LIST">both</field>
+    <field name="CANDLEINTERVAL_LIST">120</field>
+    <field name="TIME_MACHINE_ENABLED">FALSE</field>
+    <field name="RESTARTONERROR">TRUE</field>
+    <statement name="INITIALIZATION">
+      <block type="variables_set" id="aH]us/uN(gd.f=-pbA3[">
+        <field name="VAR" id="ITiw_xSBxuYP6qNF)F|h" variabletype="">Max Loss Amount</field>
+        <value name="VALUE">
+          <block type="math_number" id="e)@|uPb0;SOGU{4/{E~y">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="a]er(b:BvY!n.br]d13(">
+            <field name="VAR" id="oQ~TQa?Dq78]MM},8;*l" variabletype="">Expected Profit</field>
+            <value name="VALUE">
+              <block type="math_number" id="P`GU9_$21iwK`fUi|+vb">
+                <field name="NUM">8</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="lY{[)mQxhe!VD,v)gYjV">
+                <field name="VAR" id="KaO9g@ULafq66uv?o*cA" variabletype="">Win Amount</field>
+                <value name="VALUE">
+                  <block type="math_number" id="U(A|/.):^}Xem$3N6yVE">
+                    <field name="NUM">0.35</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="9P34Av21qj-T82K?/w?W">
+                    <field name="VAR" id="gsQah}04l(VNTYJ`*;{Y" variabletype="">Initial Amount</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="QqQ.fEpxzaqGC1Ub[TSh">
+                        <field name="NUM">0.35</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="SUBMARKET">
+      <block type="tradeOptions" id=")%oJFf}Da;40Jfl6@F)Y">
+        <field name="DURATIONTYPE_LIST">t</field>
+        <field name="CURRENCY_LIST">USD</field>
+        <value name="DURATION">
+          <block type="math_number" id="lMu!1pNuV]HE6{eqg8)]">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="AMOUNT">
+          <block type="variables_get" id="}O)I.;PzqTgsg@8^PljC">
+            <field name="VAR" id="gsQah}04l(VNTYJ`*;{Y" variabletype="">Initial Amount</field>
+          </block>
+        </value>
+        <value name="PREDICTION">
+          <block type="math_number" id="8K4[VV]lz|.pX`REeUkQ">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="before_purchase" id="strategy" x="348" y="-90">
+    <statement name="BEFOREPURCHASE_STACK">
+      <block type="controls_if" id="XZClfdRkZHB`S-GKL~KI">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="TdPr[1F7Jm!$c*4?=1ns">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="xe~QPDVOWeL6[p+YR.Rv">
+                <field name="VAR" id="j4S-npH54+xL{.HbzV3c" variabletype="">Next Trade Condition</field>
+              </block>
+            </value>
+            <value name="B">
+              <block
