@@ -17,7 +17,7 @@
   <block type="after_purchase" id="tv^t?%1u*:W4IT%pX|zi" collapsed="true" x="2189" y="-60">
     <statement name="AFTERPURCHASE_STACK">
       <block type="controls_if" id="sJy=W27to^xWtEfx^!In">
-        <mutation else="1"></mutation>
+        <mutation else="5"></mutation>
         <value name="IF0">
           <block type="contract_check_result" id="f]tjuq1|sUj(]nr6M7kS">
             <field name="CHECK_RESULT">win</field>
@@ -33,7 +33,7 @@
                     <field name="TEXT"></field>
                   </shadow>
                   <block type="text" id="ofXQ2#?`|+.v^e{h7qwK">
-                    <field name="TEXT">Killer market</field>
+                    <field name="TEXT">ENHANCE DOLLAR PRINTER</field>
                   </block>
                 </value>
                 <next>
@@ -43,7 +43,7 @@
                         <field name="TEXT"></field>
                       </shadow>
                       <block type="read_details" id="ntYjAA|;7owvxr2YL!M;">
-                        <field name="DETAIL_INDEX">4</field>
+                        <field name="DETAIL_INDEX">5</field>
                       </block>
                     </value>
                   </block>
@@ -155,7 +155,7 @@
                     <field name="VAR" id="kQ+Ke(]*eQpM[qgfd~+g" variabletype="">Contador</field>
                     <value name="DELTA">
                       <shadow type="math_number" id="*qO$Mp_db8_!D8g#XKBP">
-                        <field name="NUM">1</field>
+                        <field name="NUM">5</field>
                       </shadow>
                     </value>
                     <next>
@@ -171,7 +171,7 @@
                             <field name="VAR" id="6o_9Nu#$3m#.?zV=ahjK" variabletype="">Deixar em 8 ou 9</field>
                             <value name="VALUE">
                               <block type="math_number" id="Hj6D[]Ga/fY{~w/5@TCh">
-                                <field name="NUM">2</field>
+                                <field name="NUM">5</field>
                               </block>
                             </value>
                             <next>
@@ -211,14 +211,14 @@
                                                 <field name="NUM">9</field>
                                               </shadow>
                                               <block type="read_details" id="cj527u@:f[5O%EPU/jOk">
-                                                <field name="DETAIL_INDEX">4</field>
+                                                <field name="DETAIL_INDEX">5</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
                                         <value name="B">
                                           <shadow type="math_number" id=");k~+=ZUM,8V7ovDrIH/">
-                                            <field name="NUM">1</field>
+                                            <field name="NUM">5</field>
                                           </shadow>
                                           <block type="variables_get" id="Z~)63Nf5@3llDqm$7(xT">
                                             <field name="VAR" id="MgsL8H;~`;r/^Tuh1)y=" variabletype="">Gale</field>
@@ -449,7 +449,7 @@
             <field name="VAR" id="rUPB[)tUi3we;byHr`7]" variabletype="">1 ou 2 segundos</field>
             <value name="VALUE">
               <block type="math_number" id=":N}6E]-XIDi$;w[B!qq}">
-                <field name="NUM">1</field>
+                <field name="NUM">5</field>
               </block>
             </value>
             <next>
@@ -457,7 +457,7 @@
                 <field name="VAR" id="4+UcGJ_mE@7^Z8-d@JaJ" variabletype="">Número de loss ( Não Alterar )</field>
                 <value name="VALUE">
                   <block type="math_number" id="t`]#Z4#DVjSp^{RXbqGP">
-                    <field name="NUM">2</field>
+                    <field name="NUM">5</field>
                   </block>
                 </value>
                 <next>
@@ -532,7 +532,7 @@
         </value>
         <value name="PREDICTION">
           <shadow type="math_number_positive" id="YvP)ix?VIAU)B`Ti,MMQ">
-            <field name="NUM">1</field>
+            <field name="NUM">5</field>
           </shadow>
           <block type="variables_get" id="+:eFWwjF^q~1G=PBd)#q">
             <field name="VAR" id="6o_9Nu#$3m#.?zV=ahjK" variabletype="">Deixar em 8 ou 9</field>
