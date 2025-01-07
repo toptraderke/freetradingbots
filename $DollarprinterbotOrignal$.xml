@@ -14,7 +14,7 @@
       <block type="trade_definition_market" id="gIVdlFG%DasAatr9N7WZ" deletable="false" movable="false">
         <field name="MARKET_LIST">synthetic_index</field>
         <field name="SUBMARKET_LIST">random_index</field>
-        <field name="SYMBOL_LIST">R_100</field>
+        <field name="SYMBOL_LIST">R_10</field>
         <next>
           <block type="trade_definition_tradetype" id="cB2Gi-p|bT3-yd442,c{" deletable="false" movable="false">
             <field name="TRADETYPECAT_LIST">digits</field>
@@ -55,7 +55,7 @@
             <field name="VAR" id="W4$:ZQCmEz#8+=4ysv5Y" variabletype="">Loss</field>
             <value name="VALUE">
               <block type="math_number" id="jSM79-L`J_8}mW%kU5?D">
-                <field name="NUM">1000</field>
+                <field name="NUM">500</field>
               </block>
             </value>
             <next>
@@ -63,7 +63,7 @@
                 <field name="VAR" id="mXtFswo{p,|%W1:V-$+r" variabletype="">Target Profit</field>
                 <value name="VALUE">
                   <block type="math_number" id="+=Z,8Uf`GqEUow?Xn|jS">
-                    <field name="NUM">607</field>
+                    <field name="NUM">500</field>
                   </block>
                 </value>
                 <next>
@@ -108,7 +108,7 @@
         </value>
         <value name="PREDICTION">
           <shadow type="math_number" id="9+z:`A^$s0-Tk0m=MdGk">
-            <field name="NUM">5</field>
+            <field name="NUM">3</field>
           </shadow>
         </value>
       </block>
@@ -197,7 +197,7 @@
                         <field name="OP">ABS</field>
                         <value name="NUM">
                           <shadow type="math_number" id="T.@^UDvi3qYB,A.MCOJY">
-                            <field name="NUM">9</field>
+                            <field name="NUM">7</field>
                           </shadow>
                           <block type="read_details" id="0j~ro=`Ekz%40^mdPx_P">
                             <field name="DETAIL_INDEX">4</field>
@@ -266,7 +266,7 @@
                                     <field name="NUM">9</field>
                                   </shadow>
                                   <block type="read_details" id="J5I/?:p$,)XvOD|V#]3q">
-                                    <field name="DETAIL_INDEX">4</field>
+                                    <field name="DETAIL_INDEX">3</field>
                                   </block>
                                 </value>
                               </block>
@@ -405,9 +405,9 @@
     </statement>
   </block>
   <block type="math_number" id="P,B-/l(mTDC[xfw*D)}x" disabled="true" x="0" y="1760">
-    <field name="NUM">5</field>
+    <field name="NUM">3</field>
   </block>
   <block type="text" id="n)t4q=;{g#|$SZwPBerT" collapsed="true" disabled="true" x="0" y="1848">
-    <field name="TEXT">Expert  Speed Bot</field>
+    <field name="TEXT">Expert Speed Bot</field>
   </block>
 </xml>
