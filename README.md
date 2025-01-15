@@ -32,7 +32,7 @@ Installation
 Follow the individual README files inside each bot's folder for installation instructions.
 
 Create an Account: 
-https://rb.gy/xqt44t
+https://money8gg.com
 
 # Wondering how to deposit
 
@@ -48,7 +48,7 @@ https://rb.gy/xqt44t
 - If you want to withdraw simply press withdraw on home screen or even on side bar
 - If you face any issues text me at  +254 792 673 175
 
-# Ption 2: Manual option( send the money to till then send your CR number to whatsapp) -
+# Option 2: Manual option( send the money to till then send your CR number to whatsapp) -
 - Kindly send the amount you want to deposit to till 4475834 (GEIGHTFORGEIGHT INVESTMENT)
 - whatsapp your cr number to +254 792 673 175
 - wait 1 minute and the deposit should be done
