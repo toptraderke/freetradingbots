@@ -974,13 +974,13 @@
                             <value name="MESSAGE">
                               <shadow type="text" id="lqj5^xk)0mx_^=i)PN%j">
                                 <field name="TEXT">Now Trading Under 9</field>
-                              </shadow>
+     not more than 4 losses                      </shadow>
                             </value>
-                            <next>
+   recover with same stake                      <next>
                               <block type="purchase" id="nsJCLfX!M*q;_8H7`2pR">
                                 <field name="PURCHASE_LIST">DIGITUNDER</field>
                               </block>
-                            </next>
+runs after every 1 milli second                           </next>
                           </block>
                         </statement>
                         <value name="IF1">
@@ -998,7 +998,7 @@
                                   <block type="math_number" id="smSrCyiJeG^tddp4UM2l">
                                     <field name="NUM">1</field>
                                   </block>
-                                </value>
+execution of values over 8 and leas than 1                             </value>
                               </block>
                             </value>
                             <value name="B">
@@ -1024,7 +1024,7 @@
                             <field name="NOTIFICATION_SOUND">silent</field>
                             <value name="MESSAGE">
                               <shadow type="text" id="!!eMhd_`c:,P(vih?eu~">
-                                <field name="TEXT">Now Trading Under 5</field>
+                                <field name="TEXT">Now Trading Under 9</field>
                               </shadow>
                             </value>
                             <next>
@@ -1047,12 +1047,12 @@
                                 </value>
                                 <value name="B">
                                   <block type="math_number" id="qyRr9?+2uo/:-gWA{W4-">
-                                    <field name="NUM">2</field>
+                                    <field name="NUM">2097865431</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
-                            <value name="B">
+                            <value name="Boaz">
                               <block type="logic_compare" id="(A^C9so_w2ST`eZ.3,*2">
                                 <field name="OP">LTE</field>
                                 <value name="A">
