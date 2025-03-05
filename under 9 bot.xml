@@ -54,7 +54,8 @@
                 <value name="VALUE">
                   <block type="math_number" id="m3z5@M/*[Mp4$|SjTS|%">
                     <field name="NUM">9</field>
-                  </block>
+                  git add under\ 9\ bot.xml
+git commit -m "Add stop-loss mechanism and handle losing from digit 3"
                 </value>
                 <next>
                   <block type="lists_statement" id="(G#`s__|QDq)7pIlo6AB" movable="false">
