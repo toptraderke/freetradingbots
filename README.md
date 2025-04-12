@@ -1,6 +1,10 @@
 # freeTradingBots - Make sure to back test before using
 This is a repository for free bots that you can use to trade at your own discretion and earn millions.
 
+
+Trade for free using the best Bots
+https://free.money8gg.com
+
 Free Trading Bots Repository: Automate Your Trading Strategies
 Description
 Welcome to the Free Trading Bots Repository! This repository is your one-stop solution for all free and open-source trading bots across various platforms and languages. From cryptocurrency trading bots like Bitcoin, Ethereum, and other altcoins to traditional stock market trading, we've got you covered. Automate your trading strategies and optimize your profits without spending a dime on expensive bots.
