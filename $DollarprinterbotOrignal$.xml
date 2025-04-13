@@ -8,6 +8,7 @@
     <variable type="" id="fuQi3z)yh-[V/U%YTJ.2" islocal="false" iscloud="false">text1</variable>
     <variable type="" id="wBM,|Pk5nM15cpK5R3Kn" islocal="false" iscloud="false">text2</variable>
     <variable type="" id="9R]TXvv|/7gDPe[p-gDZ" islocal="false" iscloud="false">text3</variable>
+    <variable type="" id="dynamic_prediction" islocal="false" iscloud="false">Dynamic Prediction</variable>
   </variables>
   <block type="trade_definition" id="=l`M:iIyHzz`#=5#|XK6" x="0" y="0">
     <statement name="TRADE_OPTIONS">
@@ -107,8 +108,8 @@
           </block>
         </value>
         <value name="PREDICTION">
-          <shadow type="math_number" id="9+z:`A^$s0-Tk0m=MdGk">
-            <field name="NUM">5</field>
+          <shadow type="math_number" id="new_dynamic_prediction">
+            <field name="NUM">Dynamic Prediction</field>
           </shadow>
         </value>
       </block>
@@ -359,7 +360,7 @@
                                 <field name="TEXT"></field>
                               </shadow>
                               <block type="text" id="DW6m@cQMF@pG~]?-wNLv">
-                                <field name="TEXT">Dollars Printed Successfully : </field>
+                                <field name="TEXT">Dollars Printed Successfully: </field>
                               </block>
                             </value>
                             <next>
@@ -408,6 +409,6 @@
     <field name="NUM">5</field>
   </block>
   <block type="text" id="n)t4q=;{g#|$SZwPBerT" collapsed="true" disabled="true" x="0" y="1848">
-    <field name="TEXT">Expert  Speed Bot</field>
+    <field name="TEXT">Expert Speed Bot</field>
   </block>
 </xml>
