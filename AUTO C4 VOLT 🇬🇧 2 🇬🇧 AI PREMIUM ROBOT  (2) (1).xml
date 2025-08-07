@@ -33,7 +33,7 @@
                 <field name="TYPE_LIST">both</field>
                 <next>
                   <block type="trade_definition_candleinterval" id="Jm)ez1.J_)aaDpHQV^s6" deletable="false" movable="false">
-                    <field name="CANDLEINTERVAL_LIST">60</field>
+                    <field name="CANDLEINTERVAL_LIST">tick</field>
                     <next>
                       <block type="trade_definition_restartbuysell" id="9cNsPG0i-iQzE7Orr_f2" deletable="false" movable="false">
                         <field name="TIME_MACHINE_ENABLED">FALSE</field>
