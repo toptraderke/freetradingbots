@@ -1,0 +1,176 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=":rDvn,TGNF;UzD~ujg+Y">Initial Stake</variable>
+    <variable id="tXW|.tHGPviLv]J@5oBf">Current Stake</variable>
+    <variable id="56hqdA8V~uW+VG#$FSu.">Max Stake</variable>
+  </variables>
+  <block type="loader_block" id="strategy_loader" x="38" y="38">
+    <next>
+      <block type="variables_set" id="set_initial">
+        <field name="VAR" id=":rDvn,TGNF;UzD~ujg+Y">Initial Stake</field>
+        <value name="VALUE">
+          <block type="math_number" id="initial_num">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="set_current">
+            <field name="VAR" id="tXW|.tHGPviLv]J@5oBf">Current Stake</field>
+            <value name="VALUE">
+              <block type="variables_get" id="get_initial">
+                <field name="VAR" id=":rDvn,TGNF;UzD~ujg+Y">Initial Stake</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="set_max">
+                <field name="VAR" id="56hqdA8V~uW+VG#$FSu.">Max Stake</field>
+                <value name="VALUE">
+                  <block type="math_number" id="max_num">
+                    <field name="NUM">32</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="trade" id="trade_block">
+                    <field name="MARKET_LIST">synthetic_index</field>
+                    <field name="SUBMARKET_LIST">volatility</field>
+                    <field name="SYMBOL_LIST">R_75</field>
+                    <field name="TRADETYPECAT_LIST">risefall</field>
+                    <field name="TRADETYPE_LIST">callput</field>
+                    <field name="TYPE_LIST">both</field>
+                    <field name="CANDLEINTERVAL_LIST">60</field>
+                    <field name="CONTRACT_CATEGORIES_LIST">Up/Down</field>
+                    <field name="DURATIONTYPE_LIST">t</field>
+                    <field name="EXPIRYTYPE_LIST">duration</field>
+                    <field name="BARRIERChoices">Off</field>
+                    <field name="SESSIONSChoices">Off</field>
+                    <field name="CANCELTRIGGERChoices">trigger</field>
+                    <value name="DURATION">
+                      <block type="math_number" id="duration_num">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                    <value name="STAKE">
+                      <block type="variables_get" id="get_current">
+                        <field name="VAR" id="tXW|.tHGPviLv]J@5oBf">Current Stake</field>
+                      </block>
+                    </value>
+                    <value name="CURRENCY">
+                      <block type="text" id="currency_text">
+                        <field name="TEXT">USD</field>
+                      </block>
+                    </value>
+                    <statement name="AFTERPURCHASE_STACK">
+                      <block type="controls_if" id="if_win_loss">
+                        <value name="IF0">
+                          <block type="is_candle_black" id="check_win">
+                            <value name="OHLCOBJ">
+                              <block type="logic_boolean" id="win_condition">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="variables_set" id="reset_on_win">
+                            <field name="VAR" id="tXW|.tHGPviLv]J@5oBf">Current Stake</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="get_initial_on_win">
+                                <field name="VAR" id=":rDvn,TGNF;UzD~ujg+Y">Initial Stake</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="if_loss">
+                            <value name="IF0">
+                              <block type="logic_negate" id="negate_win">
+                                <value name="BOOL">
+                                  <block type="is_candle_black" id="check_loss">
+                                    <value name="OHLCOBJ">
+                                      <block type="logic_boolean" id="loss_condition">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="math_arithmetic" id="double_stake">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="A_num">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="get_current_loss">
+                                    <field name="VAR" id="tXW|.tHGPviLv]J@5oBf">Current Stake</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="B_num">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_if" id="check_max">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="compare_max">
+                                        <field name="OP">GT</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="get_current_max">
+                                            <field name="VAR" id="tXW|.tHGPviLv]J@5oBf">Current Stake</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="variables_get" id="get_max">
+                                            <field name="VAR" id="56hqdA8V~uW+VG#$FSu.">Max Stake</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="reset_max">
+                                        <field name="VAR" id="tXW|.tHGPviLv]J@5oBf">Current Stake</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="get_initial_max">
+                                            <field name="VAR" id=":rDvn,TGNF;UzD~ujg+Y">Initial Stake</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <statement name="DURING_PURCHASE_STACK">
+                      <block type="controls_if" id="during_if">
+                        <value name="IF0">
+                          <block type="contract_check_result" id="check_result">
+                            <field name="CHECK_RESULT">loss</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="PREDICTION">
+                      <block type="logic_boolean" id="prediction">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="trade_again" id="trade_again">
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
