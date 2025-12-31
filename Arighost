@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strategy name="Aggressive XAUUSD 1M Scalper" description="High-risk, fast scalping using EMA, RSI, and Bollinger Bands" version="1.0">
+  <parameters>
+    <parameter name="Asset" type="string" default="XAUUSD"/>
+    <parameter name="TradeType" type="string" default="Up/Down"/>
+    <parameter name="Timeframe" type="integer" default="1"/>
+    <parameter name="InitialStake" type="number" default="1"/>
+    <parameter name="MaxTrades" type="integer" default="10"/>
+    <parameter name="Martingale" type="boolean" default="true"/>
+  </parameters>
+  <indicators>
+    <indicator type="EMA" period="5"/>
+    <indicator type="EMA" period="20"/>
+    <indicator type="RSI" period="14" overbought="70" oversold="30"/>
+    <indicator type="BollingerBands" period="20" deviation="2"/>
+  </indicators>
+  <conditions>
+    <condition type="buy">
+      <rule>
+        EMA[5] > EMA[20] AND
+        RSI < 60 AND
+        Price < BollingerBands.lower
+      </rule>
+    </condition>
+    <condition type="sell">
+      <rule>
+        EMA[5] < EMA[20] AND
+        RSI > 40 AND
+        Price > BollingerBands.upper
+      </rule>
+    </condition>
+  </conditions>
+  <actions>
+    <action type="trade">
+      <stake formula="initial"/>
+      <duration unit="minutes" value="1"/>
+      <type>Up/Down</type>
+    </action>
+    <action type="martingale" enable="true" factor="2"/>
+  </actions>
+</strategy>
