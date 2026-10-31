@@ -67,7 +67,7 @@
                 <field name="TYPE">TEXT</field>
                 <value name="TEXT">
                   <shadow type="text" id="h5X+*[5.x]gKZss%`=U@">
-                    <field name="TEXT">AUTO C4 VOLT 🇬🇧 2 🇬🇧 AI PREMIUM ROBOT, Here we make trading easier for beginners and professional traders :let's green together 💯</field>
+                    <field name="TEXT">Altra vision premium, Here we make trading easier for beginners and professional traders :let's green together 💯</field>
                   </shadow>
                 </value>
               </block>
@@ -906,7 +906,7 @@
                 <field name="NOTIFICATION_SOUND">silent</field>
                 <value name="MESSAGE">
                   <shadow type="text" id="Z9S]%SP:2diGc=)}yNyJ">
-                    <field name="TEXT">[Optimus Binary Traders]</field>
+                    <field name="TEXT">[ Binary Traders]</field>
                   </shadow>
                   <block type="variables_get" id="/3YiQLc|`iFCGmMh({ON">
                     <field name="VAR" id="Zt/nZw_0OO7A|Rkc):wH" variabletype="">text1</field>
